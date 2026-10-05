@@ -1,0 +1,93 @@
+:root {
+  color-scheme: light;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  background: #f6f8f7;
+  color: #18231e;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 340px;
+  min-height: 220px;
+  margin: 0;
+}
+
+main {
+  padding: 18px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #dce4df;
+}
+
+.mark {
+  display: grid;
+  width: 38px;
+  height: 38px;
+  place-items: center;
+  border-radius: 50%;
+  background: #1877f2;
+  color: white;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+h1 {
+  margin: 0;
+  font-size: 17px;
+}
+
+header p {
+  margin: 4px 0 0;
+  color: #58665f;
+  font-size: 12px;
+}
+
+#status {
+  margin: 16px 0 10px;
+  color: #46544c;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+#pages {
+  display: grid;
+  gap: 7px;
+  max-height: 250px;
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;
+  list-style: none;
+}
+
+#pages a {
+  display: block;
+  padding: 10px 12px;
+  border: 1px solid #dce4df;
+  border-radius: 6px;
+  background: white;
+  color: #145db8;
+  font-size: 13px;
+  text-decoration: none;
+  overflow-wrap: anywhere;
+}
+
+#pages a:hover {
+  border-color: #1877f2;
+}
+
+footer {
+  margin-top: 15px;
+  padding-top: 11px;
+  border-top: 1px solid #dce4df;
+  color: #68756e;
+  font-size: 11px;
+  line-height: 1.6;
+}
