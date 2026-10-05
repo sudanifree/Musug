@@ -1,16 +1,25 @@
 {
   "manifest_version": 3,
-  "name": "صفحات فيسبوك الموثقة",
+  "name": "مؤشر رواج Facebook",
   "version": "1.0.0",
-  "description": "يعرض صفحات فيسبوك التي تظهر عليها شارة التوثيق في الصفحة الحالية.",
+  "description": "يرتب منشورات Facebook الظاهرة حسب تقدير محلي للتفاعل وحداثة النشر.",
   "action": {
-    "default_title": "الصفحات الموثقة",
+    "default_title": "مؤشر رواج Facebook",
     "default_popup": "popup.html"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "facebook-trend-indicator@musug.local"
+    }
   },
   "permissions": ["activeTab"],
   "content_scripts": [
     {
-      "matches": ["https://www.facebook.com/*", "https://web.facebook.com/*"],
+      "matches": [
+        "https://www.facebook.com/*",
+        "https://web.facebook.com/*",
+        "https://m.facebook.com/*"
+      ],
       "js": ["content.js"],
       "run_at": "document_idle"
     }
